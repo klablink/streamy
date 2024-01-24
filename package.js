@@ -12,9 +12,9 @@ Package.describe({
 });
 
 Package.onUse(function (api) {
-  api.versionsFrom("1.0.3.1");
+  api.versionsFrom(["1.0.3.1", "3.0-beta.0"]);
 
-  api.use(["underscore", "mongo", "check", "reactive-var"]);
+  api.use(["underscore", "mongo", "check", "reactive-var", "modules", "ecmascript"]);
 
   // Both
   api.addFiles([
